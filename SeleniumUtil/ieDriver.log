@@ -1,0 +1,138 @@
+I 2018-10-18 16:41:51:163 c:\projects\webdriver\cpp\webdriver-server\server.cc(87) Starting WebDriver server on port: '40229' on host: ''
+I 2018-10-18 16:41:51:163 c:\projects\webdriver\cpp\iedriver\ieserver.cpp(33) Driver version: 3.14.0.0 (64-bit)
+D 2018-10-18 16:41:51:199 c:\projects\webdriver\cpp\webdriver-server\server.cc(340) Command: GET /status {}
+D 2018-10-18 16:41:51:200 c:\projects\webdriver\cpp\webdriver-server\server.cc(416) Response: {
+	"value" : 
+	{
+		"build" : 
+		{
+			"version" : "3.14.0.0 (64-bit)"
+		},
+		"message" : "Ready to create session",
+		"os" : 
+		{
+			"arch" : "x64",
+			"name" : "windows",
+			"version" : "6.1.7600.16385 (win7_rtm.090713-1255)"
+		},
+		"ready" : true
+	}
+}
+D 2018-10-18 16:41:51:496 c:\projects\webdriver\cpp\webdriver-server\server.cc(340) Command: POST /session {
+  "desiredCapabilities": {
+    "ie.enableFullPageScreenshot": false,
+    "logLevel": "DEBUG",
+    "enablePersistentHover": false,
+    "ie.browserCommandLineSwitches": "-private",
+    "ie.forceCreateProcessApi": true,
+    "logFile": "ieDriver.log",
+    "se:ieOptions": {
+      "ie.enableFullPageScreenshot": false,
+      "enablePersistentHover": false,
+      "ie.browserCommandLineSwitches": "-private",
+      "ie.forceCreateProcessApi": true
+    },
+    "browserName": "internet explorer"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "browserName": "internet explorer",
+        "se:ieOptions": {
+          "ie.enableFullPageScreenshot": false,
+          "enablePersistentHover": false,
+          "ie.browserCommandLineSwitches": "-private",
+          "ie.forceCreateProcessApi": true
+        }
+      }
+    ]
+  }
+}
+D 2018-10-18 16:41:51:496 c:\projects\webdriver\cpp\iedriver\iesession.cpp(53) Mutex acquired for session initalization
+D 2018-10-18 16:41:51:504 c:\projects\webdriver\cpp\iedriver\iesession.cpp(109) Releasing session initialization mutex
+D 2018-10-18 16:41:51:504 c:\projects\webdriver\cpp\webdriver-server\command.cc(36) Raw JSON command: { "name" : "newSession", "locator" : { }, "parameters" : {
+  "desiredCapabilities": {
+    "ie.enableFullPageScreenshot": false,
+    "logLevel": "DEBUG",
+    "enablePersistentHover": false,
+    "ie.browserCommandLineSwitches": "-private",
+    "ie.forceCreateProcessApi": true,
+    "logFile": "ieDriver.log",
+    "se:ieOptions": {
+      "ie.enableFullPageScreenshot": false,
+      "enablePersistentHover": false,
+      "ie.browserCommandLineSwitches": "-private",
+      "ie.forceCreateProcessApi": true
+    },
+    "browserName": "internet explorer"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "browserName": "internet explorer",
+        "se:ieOptions": {
+          "ie.enableFullPageScreenshot": false,
+          "enablePersistentHover": false,
+          "ie.browserCommandLineSwitches": "-private",
+          "ie.forceCreateProcessApi": true
+        }
+      }
+    ]
+  }
+} }
+D 2018-10-18 16:41:51:504 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(46) Found W3C capabilities structure
+D 2018-10-18 16:41:51:504 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(225) Validating alwaysMatch capability set
+D 2018-10-18 16:41:51:504 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(599) Validating capabilities object
+D 2018-10-18 16:41:51:504 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(246) Validating firstMatch capability set with index 0
+D 2018-10-18 16:41:51:504 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(599) Validating capabilities object
+D 2018-10-18 16:41:51:504 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(634) Found browserName capability. Validating value type is string.
+D 2018-10-18 16:41:51:504 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(890) Found se:ieOptions capability. Validating value type is object.
+D 2018-10-18 16:41:51:504 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(300) Processing matched capability set with index 0
+W 2018-10-18 16:41:51:504 c:\projects\webdriver\cpp\iedriver\commandhandlers\newsessioncommandhandler.cpp(107) Invalid capability setting: timeouts is type null instead of object. Default value will be used: null
+
+D 2018-10-18 16:41:51:504 c:\projects\webdriver\cpp\iedriver\browserfactory.cpp(147) Ignoring Protected Mode Settings: 0
+D 2018-10-18 16:41:51:504 c:\projects\webdriver\cpp\iedriver\browserfactory.cpp(150) Checking validity of Protected Mode settings.
+D 2018-10-18 16:41:51:504 c:\projects\webdriver\cpp\iedriver\browserfactory.cpp(1080) Detected IE version: 11, Windows version supports Protected Mode: 1
+D 2018-10-18 16:41:51:504 c:\projects\webdriver\cpp\iedriver\browserfactory.cpp(1171) Found Protected Mode setting value of 3 for zone 1
+D 2018-10-18 16:41:51:505 c:\projects\webdriver\cpp\iedriver\browserfactory.cpp(1171) Found Protected Mode setting value of 3 for zone 2
+D 2018-10-18 16:41:51:505 c:\projects\webdriver\cpp\iedriver\browserfactory.cpp(1171) Found Protected Mode setting value of 3 for zone 3
+D 2018-10-18 16:41:51:505 c:\projects\webdriver\cpp\iedriver\browserfactory.cpp(1175) RegQueryValueEx failed for getting Protected Mode setting for a zone: 4
+D 2018-10-18 16:41:51:505 c:\projects\webdriver\cpp\iedriver\browserfactory.cpp(153) Has Valid Protected Mode Settings: 1
+W 2018-10-18 16:41:51:505 c:\projects\webdriver\cpp\iedriver\registryutilities.cpp(117) RegQueryValueEx failed with error code 2 retrieving required buffer size for value with name TabProcGrowth in subkey Software\Microsoft\Internet Explorer\Main in hive HKEY_CURRENT_USER
+W 2018-10-18 16:41:51:505 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(948) Unable to launch browser, received NULL process ID
+W 2018-10-18 16:41:51:505 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(780) Unable to get current browser
+D 2018-10-18 16:41:51:505 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(786) Setting serialized response to {
+	"value" : 
+	{
+		"data" : null,
+		"error" : "session not created",
+		"message" : "Unexpected error launching Internet Explorer. Unable to use CreateProcess() API. To use CreateProcess() with Internet Explorer 8 or higher, the value of registry setting in HKEY_CURRENT_USER\\Software\\Microsoft\\Internet Explorer\\Main\\TabProcGrowth must be '0'.",
+		"stacktrace" : ""
+	}
+}
+D 2018-10-18 16:41:51:505 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(787) Is waiting flag: 0
+D 2018-10-18 16:41:51:514 c:\projects\webdriver\cpp\iedriver\iesession.cpp(150) Executor shutdown successful!
+D 2018-10-18 16:41:51:514 c:\projects\webdriver\cpp\iedriver\iesession.cpp(158) Posting thread shutdown message
+D 2018-10-18 16:41:51:514 c:\projects\webdriver\cpp\iedriver\iesession.cpp(161) Starting wait for thread completion
+D 2018-10-18 16:41:51:514 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(644) Shutdown message received
+D 2018-10-18 16:41:51:514 c:\projects\webdriver\cpp\iedriver\iesession.cpp(164) Waiting for thread to end returned 4294967295
+D 2018-10-18 16:41:51:514 c:\projects\webdriver\cpp\webdriver-server\server.cc(416) Response: {
+	"value" : 
+	{
+		"data" : null,
+		"error" : "session not created",
+		"message" : "Unexpected error launching Internet Explorer. Unable to use CreateProcess() API. To use CreateProcess() with Internet Explorer 8 or higher, the value of registry setting in HKEY_CURRENT_USER\\Software\\Microsoft\\Internet Explorer\\Main\\TabProcGrowth must be '0'.",
+		"stacktrace" : ""
+	}
+}
+D 2018-10-18 16:41:51:514 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(106) Entering IECommandExecutor::OnDestroy
+D 2018-10-18 16:41:51:514 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(108) Clearing managed element cache
+D 2018-10-18 16:41:51:514 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(111) Closing command handler repository
+D 2018-10-18 16:41:51:514 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(113) Closing element finder
+D 2018-10-18 16:41:51:514 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(115) Closing input manager
+D 2018-10-18 16:41:51:514 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(117) Closing proxy manager
+D 2018-10-18 16:41:51:514 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(119) Closing browser factory
+D 2018-10-18 16:41:51:514 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(121) Posting quit message
+D 2018-10-18 16:41:51:514 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(123) Leaving IECommandExecutor::OnDestroy
+D 2018-10-18 16:41:51:514 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(646) Returned from DestroyWindow()
+D 2018-10-18 16:41:51:514 c:\projects\webdriver\cpp\iedriver\iecommandexecutor.cpp(659) Exited IECommandExecutor thread message loop
