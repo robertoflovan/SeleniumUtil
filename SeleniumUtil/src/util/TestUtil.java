@@ -18,10 +18,13 @@ public class TestUtil {
 	
 	private TestBrowser browser;
 	
+	private int waitTimeSeconds;
+	
 	
 	//Constructor
 	public TestUtil(TestBrowser browser) {
 		this.browser = browser;
+		this.waitTimeSeconds = 15;
 	}
 	
 	//Generic actions methods
@@ -37,12 +40,15 @@ public class TestUtil {
 		browser.getDriver().get(url);
 	}
 	
+	public String getText(By by){
+		return waitWebElement(by).getText();
+	}
 	
 	//Wait
 	
 	private WebElement waitWebElement(By by){
 		
-		Wait<WebDriver> wait = new FluentWait<WebDriver>(browser.getDriver()).withTimeout(Duration.ofSeconds(100))
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(browser.getDriver()).withTimeout(Duration.ofSeconds(waitTimeSeconds))
 		        .pollingEvery(Duration.ofMillis(600)).ignoring(NoSuchElementException.class);
 		
 		WebElement element = wait.until(new Function<WebDriver, WebElement>() 
@@ -84,6 +90,15 @@ public class TestUtil {
 		this.browser = browser;
 	}
 
+	public int getWaitTimeSeconds() {
+		return waitTimeSeconds;
+	}
+
+	public void setWaitTimeSeconds(int waitTimeSeconds) {
+		this.waitTimeSeconds = waitTimeSeconds;
+	}
+
+	
 		
 	
 	
