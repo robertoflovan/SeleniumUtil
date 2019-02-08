@@ -12,7 +12,7 @@ public class TestIE {
 		
 		
 		// set driver path
-		 
+		// 2 test
 		System.setProperty("webdriver.ie.driver",RUTA_DRIVER);
 		 
 		// Initialise browser
